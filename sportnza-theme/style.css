@@ -446,6 +446,8 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     transition: var(--transition);
     border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
 }
 
 .feature-card:hover {
@@ -484,6 +486,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-text-muted);
     line-height: 1.7;
     margin-bottom: var(--spacing-lg);
+    flex-grow: 1;
 }
 
 .feature-card-link {
