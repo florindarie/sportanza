@@ -1,0 +1,25 @@
+<?php
+/**
+ * Template part: Wide card layout (The Outliers section).
+ *
+ * @package Sportnza
+ */
+?>
+<article class="wide-card">
+    <a href="<?php the_permalink(); ?>" class="card-link">
+        <div class="card-image">
+            <?php if ( has_post_thumbnail() ) : ?>
+                <?php the_post_thumbnail( 'sportnza-featured-large' ); ?>
+            <?php endif; ?>
+            <?php $tag = sportnza_get_card_tag(); ?>
+            <?php if ( $tag ) : ?>
+                <span class="card-tag"><?php echo $tag; ?></span>
+            <?php endif; ?>
+        </div>
+        <div class="card-content">
+            <h3 class="card-title"><?php the_title(); ?></h3>
+            <p class="card-excerpt"><?php echo esc_html( sportnza_get_excerpt( 25 ) ); ?></p>
+            <span class="card-date"><?php echo esc_html( get_the_date( 'F j, Y' ) ); ?></span>
+        </div>
+    </a>
+</article>
