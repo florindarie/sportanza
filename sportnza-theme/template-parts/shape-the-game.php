@@ -19,7 +19,7 @@
                 <a href="#" class="btn btn-green"><?php esc_html_e( 'Visit Sportaza', 'sportnza' ); ?></a>
             </div>
             <div class="shape-image">
-                <img src="<?php echo esc_url( SPORTNZA_URI . '/assets/images/shape-game.webp' ); ?>" alt="<?php esc_attr_e( 'Shape the Game', 'sportnza' ); ?>">
+                <img src="<?php echo esc_url( SPORTNZA_URI . '/assets/images/go-beyond.webp' ); ?>" alt="<?php esc_attr_e( 'Shape the Game', 'sportnza' ); ?>">
             </div>
         </div>
     </div>

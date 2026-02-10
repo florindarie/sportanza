@@ -16,7 +16,7 @@
                 <a href="#" class="btn btn-green btn-large"><?php esc_html_e( 'Play Now', 'sportnza' ); ?></a>
             </div>
             <div class="go-beyond-image">
-                <img src="<?php echo esc_url( SPORTNZA_URI . '/assets/images/go-beyond.webp' ); ?>" alt="<?php esc_attr_e( 'Go Beyond the Game', 'sportnza' ); ?>">
+                <img src="<?php echo esc_url( SPORTNZA_URI . '/assets/images/shape-game.webp' ); ?>" alt="<?php esc_attr_e( 'Go Beyond the Game', 'sportnza' ); ?>">
             </div>
         </div>
     </div>
