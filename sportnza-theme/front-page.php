@@ -16,7 +16,7 @@ get_template_part( 'template-parts/feature-cards' );
     <div class="container">
         <div class="section-header">
             <h2 class="section-title"><?php esc_html_e( 'Our Stories', 'sportnza' ); ?></h2>
-            <a href="<?php echo esc_url( get_permalink( get_option( 'page_for_posts' ) ) ); ?>" class="btn btn-outline-green"><?php esc_html_e( 'View More', 'sportnza' ); ?></a>
+            <a href="<?php echo esc_url( get_permalink( get_option( 'page_for_posts' ) ) ); ?>" class="btn btn-outline-green btn-skew"><span><?php esc_html_e( 'View More', 'sportnza' ); ?></span></a>
         </div>
 
         <?php

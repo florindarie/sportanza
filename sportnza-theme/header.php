@@ -32,7 +32,7 @@
             </nav>
 
             <div class="header-actions">
-                <a href="#" class="btn btn-green"><?php esc_html_e( 'Join Now', 'sportnza' ); ?></a>
+                <a href="#" class="btn btn-green btn-skew"><span><?php esc_html_e( 'Join Now', 'sportnza' ); ?></span></a>
             </div>
 
             <button class="mobile-menu-btn" aria-label="<?php esc_attr_e( 'Toggle menu', 'sportnza' ); ?>">

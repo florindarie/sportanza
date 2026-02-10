@@ -19,7 +19,7 @@
                 <p class="shape-text">
                     <?php esc_html_e( 'With cutting-edge technology, real-time analytics, and a passionate community of sports enthusiasts, Sportaza puts the power in your hands. Shape your strategy, follow your instincts, and turn every game into an opportunity.', 'sportnza' ); ?>
                 </p>
-                <a href="#" class="btn btn-outline-green"><?php esc_html_e( 'Visit Sportaza', 'sportnza' ); ?></a>
+                <a href="#" class="btn btn-outline-green btn-skew"><span><?php esc_html_e( 'Visit Sportaza', 'sportnza' ); ?></span></a>
             </div>
         </div>
     </div>

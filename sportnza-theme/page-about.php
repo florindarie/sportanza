@@ -16,7 +16,7 @@ get_header();
     </div>
     <div class="about-hero-content">
         <h1><?php esc_html_e( 'Where Every Game is Yours to Command.', 'sportnza' ); ?></h1>
-        <a href="#" class="btn btn-outline-green btn-large"><?php esc_html_e( 'Play Now', 'sportnza' ); ?></a>
+        <a href="#" class="btn btn-outline-green btn-large btn-skew"><span><?php esc_html_e( 'Play Now', 'sportnza' ); ?></span></a>
     </div>
 </section>
 

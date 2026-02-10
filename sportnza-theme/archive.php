@@ -69,7 +69,7 @@ if ( is_category() ) {
                     <?php endif; ?>
                     <h2 class="featured-title"><?php the_title(); ?></h2>
                     <p class="featured-excerpt"><?php echo esc_html( sportnza_get_excerpt( 30 ) ); ?></p>
-                    <a href="<?php the_permalink(); ?>" class="btn btn-green"><?php esc_html_e( 'Explore More', 'sportnza' ); ?></a>
+                    <a href="<?php the_permalink(); ?>" class="btn btn-green btn-skew"><span><?php esc_html_e( 'Explore More', 'sportnza' ); ?></span></a>
                 </div>
             </article>
 
