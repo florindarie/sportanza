@@ -12,11 +12,11 @@ get_header();
 
 <section class="about-hero">
     <div class="hero-background">
-        <img src="<?php echo esc_url( SPORTNZA_URI . '/assets/images/hero-banner.webp' ); ?>" alt="<?php esc_attr_e( 'About Sportaza', 'sportnza' ); ?>">
+        <img src="<?php echo esc_url( SPORTNZA_URI . '/assets/images/hero-banner.jpg' ); ?>" alt="<?php esc_attr_e( 'About Sportaza', 'sportnza' ); ?>">
     </div>
     <div class="about-hero-content">
         <h1><?php esc_html_e( 'Where Every Game is Yours to Command.', 'sportnza' ); ?></h1>
-        <a href="#" class="btn btn-outline-green btn-large btn-skew"><span><?php esc_html_e( 'Play Now', 'sportnza' ); ?></span></a>
+        <a href="#" class="btn btn-green btn-large btn-skew"><span><?php esc_html_e( 'Play Now', 'sportnza' ); ?></span></a>
     </div>
 </section>
 

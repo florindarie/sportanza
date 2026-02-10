@@ -51,15 +51,15 @@ function sportnza_get_excerpt( $length = 20 ) {
 function sportnza_get_fallback_thumbnail() {
     $slug = get_post_field( 'post_name', get_the_ID() );
     $map  = array(
-        'nba-analytics-breaking-down-the-numbers-that-matter'          => 'nba.jpg',
+        'nba-analytics-breaking-down-the-numbers-that-matter'          => 'placeholder-2.webp',
         'nfl-conference-championships-complete-betting-guide'          => 'nfl.jpg',
         'nhl-stanley-cup-futures-early-value-picks'                    => 'stanley-cup.jpg',
-        'fantasy-hockey-finding-sleeper-picks-for-value'               => 'fantasy-nhl.jpg',
+        'fantasy-hockey-finding-sleeper-picks-for-value'               => 'placeholder-3.webp',
         'identifying-sell-high-candidates-in-your-fantasy-lineup'      => 'fantasy-sell-high.jpg',
         'saturday-night-hockey-special-best-bets-bonuses'              => 'saturday-hockey.jpg',
-        'the-rivalry-that-defined-a-nation-senators-vs-maple-leafs'    => 'local-hubs.jpg',
+        'the-rivalry-that-defined-a-nation-senators-vs-maple-leafs'    => 'placeholder-1.webp',
         'pga-tour-analytics-data-driven-approach-to-golf-betting'      => 'pga.jpg',
-        'regional-betting-insights-know-your-local-teams'              => 'rivalry.jpg',
+        'regional-betting-insights-know-your-local-teams'              => 'local-hubs.jpg',
     );
 
     if ( isset( $map[ $slug ] ) ) {

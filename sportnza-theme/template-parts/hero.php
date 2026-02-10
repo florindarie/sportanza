@@ -11,8 +11,9 @@ $hero_subtitle = get_theme_mod( 'sportnza_hero_subtitle', 'Join the Fun at Sport
 $cta1_text     = get_theme_mod( 'sportnza_hero_cta_primary_text', 'Join Now' );
 $cta1_url      = get_theme_mod( 'sportnza_hero_cta_primary_url', '#' );
 
-if ( empty( $hero_bg ) ) {
-    $hero_bg = SPORTNZA_URI . '/assets/images/hero-banner.webp';
+$default_bg = SPORTNZA_URI . '/assets/images/hero-banner.jpg';
+if ( empty( $hero_bg ) || false !== strpos( $hero_bg, 'hero-banner.' ) ) {
+    $hero_bg = $default_bg;
 }
 ?>
 <section class="hero">
@@ -25,7 +26,7 @@ if ( empty( $hero_bg ) ) {
             <h1 class="hero-title"><?php echo wp_kses_post( $hero_title ); ?></h1>
             <p class="hero-offer"><?php echo esc_html( 'Sports: Up to €100, Casino: Up to €500' ); ?></p>
             <div class="hero-cta">
-                <a href="<?php echo esc_url( $cta1_url ); ?>" class="btn btn-outline-green btn-large btn-skew"><span><?php echo esc_html( $cta1_text ); ?></span></a>
+                <a href="<?php echo esc_url( $cta1_url ); ?>" class="btn btn-green btn-large btn-skew"><span><?php echo esc_html( $cta1_text ); ?></span></a>
             </div>
         </div>
     </div>

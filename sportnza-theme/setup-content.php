@@ -269,7 +269,7 @@ add_action( 'init', function() {
         'post_category' => array( $cat_ids['news'] ),
         'tags_input'    => array( 'Hockey' ),
     ) );
-    if ( $images['local_hubs_1'] ) set_post_thumbnail( $post7, $images['local_hubs_1'] );
+    if ( $images['local_hubs_2'] ) set_post_thumbnail( $post7, $images['local_hubs_2'] );
 
     $post8 = wp_insert_post( array(
         'post_title'    => 'PGA Tour Analytics: Data-Driven Approach to Golf Betting',
@@ -291,10 +291,10 @@ add_action( 'init', function() {
         'post_category' => array( $cat_ids['news'] ),
         'tags_input'    => array( 'Betting' ),
     ) );
-    if ( $images['local_hubs_2'] ) set_post_thumbnail( $post9, $images['local_hubs_2'] );
+    if ( $images['local_hubs_1'] ) set_post_thumbnail( $post9, $images['local_hubs_1'] );
 
     // ─── Set up Customizer (hero uses theme asset directly) ────────
-    set_theme_mod( 'sportnza_hero_bg', SPORTNZA_URI . '/assets/images/hero-banner.webp' );
+    set_theme_mod( 'sportnza_hero_bg', SPORTNZA_URI . '/assets/images/hero-banner.jpg' );
     set_theme_mod( 'sportnza_hero_title', 'Claim Your Welcome Bonus' );
     set_theme_mod( 'sportnza_hero_subtitle', 'Join the Fun at Sportaza' );
     set_theme_mod( 'sportnza_hero_cta_primary_text', 'Join Now' );
