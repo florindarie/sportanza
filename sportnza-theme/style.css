@@ -342,11 +342,15 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     margin-top: var(--header-height);
     overflow: hidden;
+    background: var(--color-bg-main);
 }
 
 .hero-background {
     position: absolute;
-    inset: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 0;
 }
 
@@ -359,7 +363,10 @@ h1, h2, h3, h4, h5, h6 {
 .hero-background::after {
     content: '';
     position: absolute;
-    inset: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background: linear-gradient(
         90deg,
         rgba(14, 15, 29, 0.95) 0%,
@@ -373,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
     max-width: 650px;
     padding: var(--spacing-5xl) 0;
-    animation: fadeIn 0.8s ease-out;
+    animation: fadeIn 0.8s ease-out forwards;
 }
 
 /* Small green text above hero title */
@@ -394,6 +401,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.05;
     margin-bottom: var(--spacing-lg);
     text-transform: uppercase;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .hero-title .highlight {
@@ -1032,7 +1040,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-hero .hero-background {
     position: absolute;
-    inset: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 0;
 }
 
@@ -1046,7 +1057,10 @@ h1, h2, h3, h4, h5, h6 {
 .about-hero .hero-background::after {
     content: '';
     position: absolute;
-    inset: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background: linear-gradient(
         90deg,
         rgba(14, 15, 29, 0.9) 0%,
