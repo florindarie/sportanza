@@ -6,6 +6,14 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
+    // ─── Translation helper ─────────────────────────────────────────
+    function _t(text) {
+        if (typeof sportnzaData !== 'undefined' && sportnzaData.translations && sportnzaData.translations[text]) {
+            return sportnzaData.translations[text];
+        }
+        return text;
+    }
+
     // ─── Mobile Menu Toggle ─────────────────────────────────────────
     var mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 
@@ -25,25 +33,25 @@ document.addEventListener('DOMContentLoaded', function () {
                 mobileMenu.innerHTML =
                     '<nav class="mobile-nav">' +
                         '<a href="#sports" class="mobile-nav-item">' +
-                            '<img src="' + themeUri + '/assets/images/SPORTS.svg" alt="Sports" class="nav-icon">' +
-                            '<span>Sports</span>' +
+                            '<img src="' + themeUri + '/assets/images/SPORTS.svg" alt="' + _t('Sports') + '" class="nav-icon">' +
+                            '<span>' + _t('Sports') + '</span>' +
                         '</a>' +
                         '<a href="#live" class="mobile-nav-item">' +
-                            '<img src="' + themeUri + '/assets/images/LIVE.svg" alt="Live" class="nav-icon">' +
-                            '<span>Live</span>' +
+                            '<img src="' + themeUri + '/assets/images/LIVE.svg" alt="' + _t('Live') + '" class="nav-icon">' +
+                            '<span>' + _t('Live') + '</span>' +
                         '</a>' +
                         '<a href="#fantasy" class="mobile-nav-item">' +
-                            '<img src="' + themeUri + '/assets/images/FANTASY.svg" alt="Fantasy" class="nav-icon">' +
-                            '<span>Fantasy</span>' +
+                            '<img src="' + themeUri + '/assets/images/FANTASY.svg" alt="' + _t('Fantasy') + '" class="nav-icon">' +
+                            '<span>' + _t('Fantasy') + '</span>' +
                         '</a>' +
                         '<a href="#vip" class="mobile-nav-item">' +
-                            '<img src="' + themeUri + '/assets/images/VIP.svg" alt="VIP" class="nav-icon">' +
-                            '<span>VIP</span>' +
+                            '<img src="' + themeUri + '/assets/images/VIP.svg" alt="' + _t('VIP') + '" class="nav-icon">' +
+                            '<span>' + _t('VIP') + '</span>' +
                         '</a>' +
                     '</nav>' +
                     '<div class="mobile-actions">' +
-                        '<button class="btn btn-outline btn-full">Log In</button>' +
-                        '<button class="btn btn-primary btn-full">Sign Up</button>' +
+                        '<button class="btn btn-outline btn-full">' + _t('Log In') + '</button>' +
+                        '<button class="btn btn-primary btn-full">' + _t('Sign Up') + '</button>' +
                     '</div>';
 
                 document.body.appendChild(mobileMenu);
@@ -97,11 +105,11 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             var btn = this.querySelector('.btn');
             var originalText = btn.textContent;
-            btn.textContent = 'Subscribing...';
+            btn.textContent = _t('Subscribing...');
             btn.disabled = true;
 
             setTimeout(function () {
-                btn.textContent = 'Subscribed!';
+                btn.textContent = _t('Subscribed!');
                 btn.style.background = 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)';
                 newsletterForm.querySelector('.newsletter-input').value = '';
 
