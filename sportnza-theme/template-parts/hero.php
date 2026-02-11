@@ -22,11 +22,11 @@ if ( empty( $hero_bg ) || false !== strpos( $hero_bg, 'hero-banner.' ) ) {
     </div>
     <div class="container">
         <div class="hero-content">
-            <span class="hero-subtitle-top"><?php echo esc_html( $hero_subtitle ); ?></span>
-            <h1 class="hero-title"><?php echo wp_kses_post( $hero_title ); ?></h1>
-            <p class="hero-offer"><?php echo esc_html( 'Sports: Up to €100, Casino: Up to €500' ); ?></p>
+            <span class="hero-subtitle-top"><?php echo esc_html( sportnza_t( $hero_subtitle ) ); ?></span>
+            <h1 class="hero-title"><?php echo esc_html( sportnza_t( $hero_title ) ); ?></h1>
+            <p class="hero-offer"><?php echo esc_html( sportnza_t( 'Sports: Up to €100, Casino: Up to €500' ) ); ?></p>
             <div class="hero-cta">
-                <a href="<?php echo esc_url( $cta1_url ); ?>" class="btn btn-green btn-large btn-skew"><span><?php echo esc_html( $cta1_text ); ?></span></a>
+                <a href="<?php echo esc_url( $cta1_url ); ?>" class="btn btn-green btn-large btn-skew"><span><?php echo esc_html( sportnza_t( $cta1_text ) ); ?></span></a>
             </div>
         </div>
     </div>

@@ -1,0 +1,320 @@
+{
+  "Home": {
+    "de": "Startseite",
+    "fr": "Accueil",
+    "it": "Home",
+    "hu": "Kezdőlap"
+  },
+  "Sports": {
+    "de": "Sport",
+    "fr": "Sports",
+    "it": "Sport",
+    "hu": "Sport"
+  },
+  "Academy": {
+    "de": "Akademie",
+    "fr": "Académie",
+    "it": "Accademia",
+    "hu": "Akadémia"
+  },
+  "Promotions": {
+    "de": "Aktionen",
+    "fr": "Promotions",
+    "it": "Promozioni",
+    "hu": "Promóciók"
+  },
+  "News": {
+    "de": "Nachrichten",
+    "fr": "Actualités",
+    "it": "Notizie",
+    "hu": "Hírek"
+  },
+  "Join Now": {
+    "de": "Jetzt beitreten",
+    "fr": "Rejoignez-nous",
+    "it": "Iscriviti ora",
+    "hu": "Csatlakozz most"
+  },
+  "Toggle menu": {
+    "de": "Menü umschalten",
+    "fr": "Basculer le menu",
+    "it": "Apri/chiudi menu",
+    "hu": "Menü váltása"
+  },
+  "Join the Fun at Sportaza": {
+    "de": "Erlebe den Spaß bei Sportaza",
+    "fr": "Rejoignez le fun chez Sportaza",
+    "it": "Unisciti al divertimento su Sportaza",
+    "hu": "Csatlakozz a szórakozáshoz a Sportazánál"
+  },
+  "Claim Your Welcome Bonus": {
+    "de": "Sichere dir deinen Willkommensbonus",
+    "fr": "Réclamez votre bonus de bienvenue",
+    "it": "Richiedi il tuo bonus di benvenuto",
+    "hu": "Igényeld az üdvözlő bónuszod"
+  },
+  "Sports: Up to €100, Casino: Up to €500": {
+    "de": "Sport: Bis zu 100 €, Casino: Bis zu 500 €",
+    "fr": "Sports : Jusqu'à 100 €, Casino : Jusqu'à 500 €",
+    "it": "Sport: Fino a 100 €, Casinò: Fino a 500 €",
+    "hu": "Sport: Akár 100 €, Kaszinó: Akár 500 €"
+  },
+  "Multi-Sports Action": {
+    "de": "Multi-Sport-Action",
+    "fr": "Action Multi-Sports",
+    "it": "Azione Multi-Sport",
+    "hu": "Több sportág"
+  },
+  "Bet on football, basketball, tennis, and dozens more sports from leagues around the world. Live odds updated in real time.": {
+    "de": "Wette auf Fußball, Basketball, Tennis und Dutzende weitere Sportarten aus Ligen weltweit. Live-Quoten in Echtzeit aktualisiert.",
+    "fr": "Pariez sur le football, le basketball, le tennis et des dizaines d'autres sports des ligues du monde entier. Cotes en direct mises à jour en temps réel.",
+    "it": "Scommetti su calcio, basket, tennis e decine di altri sport da campionati di tutto il mondo. Quote live aggiornate in tempo reale.",
+    "hu": "Fogadj futballra, kosárlabdára, teniszre és még sok más sportra a világ bajnokságaiból. Élő oddsok valós időben frissítve."
+  },
+  "Explore Sports": {
+    "de": "Sport entdecken",
+    "fr": "Explorer les sports",
+    "it": "Esplora gli sport",
+    "hu": "Sportok felfedezése"
+  },
+  "Live Casino Games": {
+    "de": "Live-Casino-Spiele",
+    "fr": "Jeux de casino en direct",
+    "it": "Giochi casinò dal vivo",
+    "hu": "Élő kaszinójátékok"
+  },
+  "Experience the thrill of real-time casino action with live dealers. Roulette, blackjack, baccarat, and more at your fingertips.": {
+    "de": "Erlebe den Nervenkitzel von Echtzeit-Casino-Action mit Live-Dealern. Roulette, Blackjack, Baccarat und mehr – direkt vor dir.",
+    "fr": "Vivez le frisson du casino en temps réel avec des croupiers en direct. Roulette, blackjack, baccarat et bien plus à portée de main.",
+    "it": "Vivi il brivido dell'azione al casinò in tempo reale con dealer dal vivo. Roulette, blackjack, baccarat e molto altro a portata di mano.",
+    "hu": "Éld át az élő kaszinó izgalmát valódi osztókkal. Rulett, blackjack, baccarat és még sok más, kéznél."
+  },
+  "Play Live": {
+    "de": "Live spielen",
+    "fr": "Jouer en direct",
+    "it": "Gioca dal vivo",
+    "hu": "Élő játék"
+  },
+  "Fantasy League Fun": {
+    "de": "Fantasy-Liga-Spaß",
+    "fr": "Ligue Fantasy Fun",
+    "it": "Divertimento Fantasy League",
+    "hu": "Fantasy liga szórakozás"
+  },
+  "Build your dream team, compete against friends, and climb the leaderboard. Daily and weekly fantasy contests available.": {
+    "de": "Stelle dein Traumteam zusammen, tritt gegen Freunde an und klettere in der Rangliste. Tägliche und wöchentliche Fantasy-Wettbewerbe verfügbar.",
+    "fr": "Construisez votre équipe de rêve, affrontez vos amis et grimpez au classement. Concours fantasy quotidiens et hebdomadaires disponibles.",
+    "it": "Crea la tua squadra dei sogni, sfida gli amici e scala la classifica. Concorsi fantasy giornalieri e settimanali disponibili.",
+    "hu": "Állítsd össze álomcsapatodat, versenyezz barátaiddal és mássz fel a ranglistán. Napi és heti fantasy versenyek elérhetők."
+  },
+  "Start Playing": {
+    "de": "Jetzt spielen",
+    "fr": "Commencer à jouer",
+    "it": "Inizia a giocare",
+    "hu": "Kezdj el játszani"
+  },
+  "Player Rewards": {
+    "de": "Spieler-Belohnungen",
+    "fr": "Récompenses joueurs",
+    "it": "Premi giocatori",
+    "hu": "Játékos jutalmak"
+  },
+  "Earn points on every wager and unlock exclusive bonuses, cashback offers, and VIP perks as you level up your account.": {
+    "de": "Sammle Punkte bei jeder Wette und schalte exklusive Boni, Cashback-Angebote und VIP-Vorteile frei, während du dein Konto auflevelst.",
+    "fr": "Gagnez des points sur chaque pari et débloquez des bonus exclusifs, des offres cashback et des avantages VIP en montant de niveau.",
+    "it": "Guadagna punti su ogni scommessa e sblocca bonus esclusivi, offerte cashback e vantaggi VIP man mano che sali di livello.",
+    "hu": "Szerezz pontokat minden fogadásnál, és oldj fel exkluzív bónuszokat, cashback ajánlatokat és VIP előnyöket, ahogy szintet lépsz."
+  },
+  "View Rewards": {
+    "de": "Belohnungen ansehen",
+    "fr": "Voir les récompenses",
+    "it": "Vedi i premi",
+    "hu": "Jutalmak megtekintése"
+  },
+  "Our Stories": {
+    "de": "Unsere Geschichten",
+    "fr": "Nos histoires",
+    "it": "Le nostre storie",
+    "hu": "Történeteink"
+  },
+  "View More": {
+    "de": "Mehr anzeigen",
+    "fr": "Voir plus",
+    "it": "Vedi di più",
+    "hu": "Továbbiak"
+  },
+  "Sportaza - Shape the Game Your Way": {
+    "de": "Sportaza – Gestalte das Spiel auf deine Art",
+    "fr": "Sportaza – Façonnez le jeu à votre manière",
+    "it": "Sportaza – Dai forma al gioco a modo tuo",
+    "hu": "Sportaza – Alakítsd a játékot a te módodra"
+  },
+  "Sportaza is more than a platform - it is your gateway to an unmatched sports and gaming experience. Whether you are a seasoned bettor or just getting started, our tools and community empower you to make every moment count.": {
+    "de": "Sportaza ist mehr als eine Plattform – es ist dein Tor zu einem unvergleichlichen Sport- und Spielerlebnis. Egal ob erfahrener Wetter oder Einsteiger, unsere Tools und Community helfen dir, jeden Moment zu nutzen.",
+    "fr": "Sportaza est plus qu'une plateforme – c'est votre porte d'entrée vers une expérience sportive et de jeu inégalée. Que vous soyez un parieur expérimenté ou débutant, nos outils et notre communauté vous permettent de tirer le meilleur de chaque instant.",
+    "it": "Sportaza è più di una piattaforma – è il tuo accesso a un'esperienza sportiva e di gioco senza pari. Che tu sia uno scommettitore esperto o alle prime armi, i nostri strumenti e la nostra comunità ti aiutano a sfruttare ogni momento.",
+    "hu": "A Sportaza több mint egy platform – ez a kapud a páratlan sport- és játékélményhez. Akár tapasztalt fogadó vagy, akár most kezded, eszközeink és közösségünk segítenek, hogy minden pillanatot kihasználj."
+  },
+  "With cutting-edge technology, real-time analytics, and a passionate community of sports enthusiasts, Sportaza puts the power in your hands. Shape your strategy, follow your instincts, and turn every game into an opportunity.": {
+    "de": "Mit modernster Technologie, Echtzeit-Analysen und einer leidenschaftlichen Community von Sportbegeisterten gibt dir Sportaza die Kontrolle. Gestalte deine Strategie, folge deinem Instinkt und mache jedes Spiel zu einer Chance.",
+    "fr": "Avec une technologie de pointe, des analyses en temps réel et une communauté passionnée d'amateurs de sport, Sportaza met le pouvoir entre vos mains. Façonnez votre stratégie, suivez votre instinct et transformez chaque match en opportunité.",
+    "it": "Con tecnologia all'avanguardia, analisi in tempo reale e una comunità appassionata di sport, Sportaza mette il potere nelle tue mani. Definisci la tua strategia, segui il tuo istinto e trasforma ogni partita in un'opportunità.",
+    "hu": "Élvonalbeli technológiával, valós idejű elemzésekkel és a sportrajongók szenvedélyes közösségével a Sportaza a kezedbe adja az irányítást. Alakítsd ki a stratégiádat, kövesd az ösztöneidet, és változtass minden meccset lehetőséggé."
+  },
+  "Visit Sportaza": {
+    "de": "Sportaza besuchen",
+    "fr": "Visiter Sportaza",
+    "it": "Visita Sportaza",
+    "hu": "Látogasd meg a Sportazát"
+  },
+  "Go Beyond the Game": {
+    "de": "Geh über das Spiel hinaus",
+    "fr": "Allez au-delà du jeu",
+    "it": "Vai oltre il gioco",
+    "hu": "Lépj túl a játékon"
+  },
+  "Sports betting with a fantasy league edge. Enjoy Weekly Sports & Casino Challenges, participate in tournament events, and unlock a variety of material and in-game prizes. Join Sportaza and see for the excitement happens.": {
+    "de": "Sportwetten mit Fantasy-Liga-Vorteil. Genieße wöchentliche Sport- & Casino-Herausforderungen, nimm an Turnier-Events teil und schalte eine Vielzahl von Sach- und In-Game-Preisen frei. Tritt Sportaza bei und erlebe die Spannung.",
+    "fr": "Paris sportifs avec un avantage ligue fantasy. Profitez des défis hebdomadaires Sports & Casino, participez à des tournois et débloquez une variété de prix matériels et en jeu. Rejoignez Sportaza et vivez l'excitation.",
+    "it": "Scommesse sportive con il vantaggio della fantasy league. Goditi le sfide settimanali Sport & Casinò, partecipa a eventi di tornei e sblocca una varietà di premi materiali e in-game. Unisciti a Sportaza e vivi l'emozione.",
+    "hu": "Sportfogadás fantasy liga előnnyel. Élvezd a heti Sport és Kaszinó kihívásokat, vegyél részt tornaeseményeken, és oldj fel különféle tárgyi és játékbeli nyereményeket. Csatlakozz a Sportazához és éld át az izgalmat."
+  },
+  "Play Now": {
+    "de": "Jetzt spielen",
+    "fr": "Jouer maintenant",
+    "it": "Gioca ora",
+    "hu": "Játssz most"
+  },
+  "About Us": {
+    "de": "Über uns",
+    "fr": "À propos",
+    "it": "Chi siamo",
+    "hu": "Rólunk"
+  },
+  "About Sportaza": {
+    "de": "Über Sportaza",
+    "fr": "À propos de Sportaza",
+    "it": "Informazioni su Sportaza",
+    "hu": "A Sportazáról"
+  },
+  "Where Every Game is Yours to Command.": {
+    "de": "Wo jedes Spiel dir gehört.",
+    "fr": "Où chaque jeu est entre vos mains.",
+    "it": "Dove ogni gioco è nelle tue mani.",
+    "hu": "Ahol minden játék a tiéd."
+  },
+  "Sportaza was born from a passion for sports and a belief that every fan deserves a front-row seat to the action. We set out to build a platform that combines the excitement of live sports with cutting-edge technology, creating an experience that is as thrilling as the games themselves.": {
+    "de": "Sportaza wurde aus einer Leidenschaft für Sport und dem Glauben geboren, dass jeder Fan einen Platz in der ersten Reihe verdient. Wir haben uns vorgenommen, eine Plattform zu schaffen, die die Spannung des Live-Sports mit modernster Technologie verbindet.",
+    "fr": "Sportaza est né d'une passion pour le sport et de la conviction que chaque fan mérite une place au premier rang. Nous avons entrepris de créer une plateforme qui combine l'excitation du sport en direct avec une technologie de pointe.",
+    "it": "Sportaza è nata dalla passione per lo sport e dalla convinzione che ogni tifoso meriti un posto in prima fila. Ci siamo proposti di costruire una piattaforma che combina l'emozione dello sport dal vivo con la tecnologia all'avanguardia.",
+    "hu": "A Sportaza a sport iránti szenvedélyből és abból a hitből született, hogy minden szurkoló megérdemel egy első soros helyet. Célunk egy olyan platform létrehozása volt, amely ötvözi az élő sport izgalmát a legmodernebb technológiával."
+  },
+  "Our team of sports enthusiasts, data scientists, and developers work tirelessly to deliver a platform that is fast, reliable, and packed with features. From real-time odds and in-depth statistics to live streaming and fantasy leagues, Sportaza is your all-in-one destination for sports entertainment.": {
+    "de": "Unser Team aus Sportbegeisterten, Datenwissenschaftlern und Entwicklern arbeitet unermüdlich daran, eine schnelle, zuverlässige und funktionsreiche Plattform zu liefern. Von Echtzeit-Quoten und detaillierten Statistiken bis hin zu Live-Streaming und Fantasy-Ligen – Sportaza ist dein All-in-One-Ziel für Sportunterhaltung.",
+    "fr": "Notre équipe de passionnés de sport, de data scientists et de développeurs travaille sans relâche pour offrir une plateforme rapide, fiable et riche en fonctionnalités. Des cotes en temps réel aux statistiques détaillées, en passant par le streaming en direct et les ligues fantasy, Sportaza est votre destination tout-en-un.",
+    "it": "Il nostro team di appassionati di sport, data scientist e sviluppatori lavora instancabilmente per offrire una piattaforma veloce, affidabile e ricca di funzionalità. Dalle quote in tempo reale alle statistiche approfondite, dallo streaming live alle leghe fantasy, Sportaza è la tua destinazione all-in-one.",
+    "hu": "Sportrajongókból, adattudósokból és fejlesztőkből álló csapatunk fáradhatatlanul dolgozik egy gyors, megbízható és funkciókban gazdag platform biztosításáért. A valós idejű oddsoktól és részletes statisztikáktól az élő közvetítésig és fantasy ligákig, a Sportaza a mindent-egyben sportszórakoztatás."
+  },
+  "We believe in fair play, responsible gaming, and putting our users first. Every feature we build, every update we ship, and every decision we make is guided by a simple principle: make the experience better for the people who love sports.": {
+    "de": "Wir glauben an Fairplay, verantwortungsvolles Spielen und daran, unsere Nutzer an erste Stelle zu setzen. Jede Funktion, jedes Update und jede Entscheidung folgt einem einfachen Prinzip: das Erlebnis für Sportliebhaber besser zu machen.",
+    "fr": "Nous croyons au fair-play, au jeu responsable et à la priorité donnée à nos utilisateurs. Chaque fonctionnalité, chaque mise à jour et chaque décision est guidée par un principe simple : améliorer l'expérience pour ceux qui aiment le sport.",
+    "it": "Crediamo nel fair play, nel gioco responsabile e nel mettere i nostri utenti al primo posto. Ogni funzionalità, ogni aggiornamento e ogni decisione è guidata da un principio semplice: migliorare l'esperienza per chi ama lo sport.",
+    "hu": "Hiszünk a fair playben, a felelős játékban és abban, hogy felhasználóinkat helyezzük előtérbe. Minden funkció, minden frissítés és minden döntés egyetlen egyszerű elvet követ: jobbá tenni az élményt a sportszeretők számára."
+  },
+  "Whether you are here to follow your favorite team, test your knowledge in fantasy leagues, or explore the world of live casino gaming, Sportaza welcomes you. Join our growing community and discover what it means to truly shape the game your way.": {
+    "de": "Egal ob du hier bist, um deinem Lieblingsteam zu folgen, dein Wissen in Fantasy-Ligen zu testen oder die Welt des Live-Casino-Gamings zu entdecken – Sportaza heißt dich willkommen. Tritt unserer wachsenden Community bei und entdecke, was es bedeutet, das Spiel wirklich auf deine Art zu gestalten.",
+    "fr": "Que vous soyez ici pour suivre votre équipe favorite, tester vos connaissances en ligues fantasy ou explorer le monde du casino en direct, Sportaza vous accueille. Rejoignez notre communauté grandissante et découvrez ce que signifie vraiment façonner le jeu à votre manière.",
+    "it": "Che tu sia qui per seguire la tua squadra del cuore, mettere alla prova le tue conoscenze nelle leghe fantasy o esplorare il mondo del casinò dal vivo, Sportaza ti dà il benvenuto. Unisciti alla nostra comunità in crescita e scopri cosa significa davvero dare forma al gioco a modo tuo.",
+    "hu": "Akár a kedvenc csapatodat követed, akár a tudásodat teszteled fantasy ligákban, akár az élő kaszinó világát fedezed fel, a Sportaza üdvözöl. Csatlakozz növekvő közösségünkhöz és fedezd fel, mit jelent igazán a játékot a te módodra alakítani."
+  },
+  "Pages": {
+    "de": "Seiten",
+    "fr": "Pages",
+    "it": "Pagine",
+    "hu": "Oldalak"
+  },
+  "FAQ": {
+    "de": "FAQ",
+    "fr": "FAQ",
+    "it": "FAQ",
+    "hu": "GYIK"
+  },
+  "Follow us on X": {
+    "de": "Folge uns auf X",
+    "fr": "Suivez-nous sur X",
+    "it": "Seguici su X",
+    "hu": "Kövess minket az X-en"
+  },
+  "Follow us on Instagram": {
+    "de": "Folge uns auf Instagram",
+    "fr": "Suivez-nous sur Instagram",
+    "it": "Seguici su Instagram",
+    "hu": "Kövess minket az Instagramon"
+  },
+  "Follow us on YouTube": {
+    "de": "Folge uns auf YouTube",
+    "fr": "Suivez-nous sur YouTube",
+    "it": "Seguici su YouTube",
+    "hu": "Kövess minket a YouTube-on"
+  },
+  "Follow us on LinkedIn": {
+    "de": "Folge uns auf LinkedIn",
+    "fr": "Suivez-nous sur LinkedIn",
+    "it": "Seguici su LinkedIn",
+    "hu": "Kövess minket a LinkedIn-en"
+  },
+  "Copyright &copy; %s Sportaza is a legally recognized trademark. All Rights Reserved.": {
+    "de": "Copyright &copy; %s Sportaza ist eine gesetzlich anerkannte Marke. Alle Rechte vorbehalten.",
+    "fr": "Copyright &copy; %s Sportaza est une marque légalement reconnue. Tous droits réservés.",
+    "it": "Copyright &copy; %s Sportaza è un marchio legalmente riconosciuto. Tutti i diritti riservati.",
+    "hu": "Copyright &copy; %s A Sportaza jogilag elismert védjegy. Minden jog fenntartva."
+  },
+  "Shape the Game": {
+    "de": "Gestalte das Spiel",
+    "fr": "Façonnez le jeu",
+    "it": "Dai forma al gioco",
+    "hu": "Alakítsd a játékot"
+  },
+  "Live": {
+    "de": "Live",
+    "fr": "En direct",
+    "it": "Dal vivo",
+    "hu": "Élő"
+  },
+  "Fantasy": {
+    "de": "Fantasy",
+    "fr": "Fantasy",
+    "it": "Fantasy",
+    "hu": "Fantasy"
+  },
+  "VIP": {
+    "de": "VIP",
+    "fr": "VIP",
+    "it": "VIP",
+    "hu": "VIP"
+  },
+  "Log In": {
+    "de": "Anmelden",
+    "fr": "Connexion",
+    "it": "Accedi",
+    "hu": "Bejelentkezés"
+  },
+  "Sign Up": {
+    "de": "Registrieren",
+    "fr": "S'inscrire",
+    "it": "Registrati",
+    "hu": "Regisztráció"
+  },
+  "Subscribing...": {
+    "de": "Wird abonniert...",
+    "fr": "Abonnement en cours...",
+    "it": "Iscrizione in corso...",
+    "hu": "Feliratkozás..."
+  },
+  "Subscribed!": {
+    "de": "Abonniert!",
+    "fr": "Abonné !",
+    "it": "Iscritto!",
+    "hu": "Feliratkozva!"
+  }
+}

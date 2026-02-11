@@ -15,27 +15,40 @@
 
             <nav class="main-nav">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="nav-link<?php if ( is_front_page() ) echo ' active'; ?>">
-                    <?php esc_html_e( 'Home', 'sportnza' ); ?>
+                    <?php echo esc_html( sportnza_t( 'Home' ) ); ?>
                 </a>
                 <a href="<?php echo esc_url( home_url( '/category/sports/' ) ); ?>" class="nav-link<?php if ( is_category( 'sports' ) ) echo ' active'; ?>">
-                    <?php esc_html_e( 'Sports', 'sportnza' ); ?>
+                    <?php echo esc_html( sportnza_t( 'Sports' ) ); ?>
                 </a>
                 <a href="<?php echo esc_url( home_url( '/category/academy/' ) ); ?>" class="nav-link<?php if ( is_category( 'academy' ) ) echo ' active'; ?>">
-                    <?php esc_html_e( 'Academy', 'sportnza' ); ?>
+                    <?php echo esc_html( sportnza_t( 'Academy' ) ); ?>
                 </a>
                 <a href="<?php echo esc_url( home_url( '/category/promotions/' ) ); ?>" class="nav-link<?php if ( is_category( 'promotions' ) ) echo ' active'; ?>">
-                    <?php esc_html_e( 'Promotions', 'sportnza' ); ?>
+                    <?php echo esc_html( sportnza_t( 'Promotions' ) ); ?>
                 </a>
                 <a href="<?php echo esc_url( home_url( '/category/news/' ) ); ?>" class="nav-link<?php if ( is_category( 'news' ) ) echo ' active'; ?>">
-                    <?php esc_html_e( 'News', 'sportnza' ); ?>
+                    <?php echo esc_html( sportnza_t( 'News' ) ); ?>
                 </a>
             </nav>
 
             <div class="header-actions">
-                <a href="#" class="btn btn-green btn-skew"><span><?php esc_html_e( 'Join Now', 'sportnza' ); ?></span></a>
+                <?php
+                $current_lang = sportnza_get_lang();
+                $languages    = sportnza_get_languages();
+                ?>
+                <div class="lang-switcher">
+                    <select class="lang-select" onchange="if(this.value)window.location=this.value" aria-label="Language">
+                        <?php foreach ( $languages as $code => $label ) : ?>
+                            <option value="<?php echo esc_url( add_query_arg( 'lang', $code, home_url( $_SERVER['REQUEST_URI'] ) ) ); ?>"<?php selected( $current_lang, $code ); ?>>
+                                <?php echo esc_html( $label ); ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+                <a href="#" class="btn btn-green btn-skew"><span><?php echo esc_html( sportnza_t( 'Join Now' ) ); ?></span></a>
             </div>
 
-            <button class="mobile-menu-btn" aria-label="<?php esc_attr_e( 'Toggle menu', 'sportnza' ); ?>">
+            <button class="mobile-menu-btn" aria-label="<?php echo esc_attr( sportnza_t( 'Toggle menu' ) ); ?>">
                 <span></span>
                 <span></span>
                 <span></span>

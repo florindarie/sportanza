@@ -5,7 +5,9 @@ const path = require('path');
 const BASE = 'http://localhost:8881';
 const OUT = path.join(__dirname, 'static-export');
 
-const pages = [
+const languages = ['en', 'de', 'fr', 'it', 'hu'];
+
+const basePages = [
   { url: '/', file: 'index.html' },
   { url: '/about/', file: 'about/index.html' },
   { url: '/category/sports/', file: 'category/sports/index.html' },
@@ -14,6 +16,22 @@ const pages = [
   { url: '/category/promotions/', file: 'category/promotions/index.html' },
 ];
 
+// Build full page list: English at root, other languages in subfolders
+const pages = [];
+for (const lang of languages) {
+  for (const page of basePages) {
+    if (lang === 'en') {
+      pages.push({ url: page.url, file: page.file, lang: 'en' });
+    } else {
+      pages.push({
+        url: page.url + '?lang=' + lang,
+        file: lang + '/' + page.file,
+        lang: lang,
+      });
+    }
+  }
+}
+
 // Clean output
 if (fs.existsSync(OUT)) fs.rmSync(OUT, { recursive: true });
 fs.mkdirSync(OUT, { recursive: true });
@@ -21,7 +39,7 @@ fs.mkdirSync(OUT, { recursive: true });
 for (const page of pages) {
   const outFile = path.join(OUT, page.file);
   fs.mkdirSync(path.dirname(outFile), { recursive: true });
-  console.log(`Downloading ${page.url}`);
+  console.log(`Downloading ${page.url} (${page.lang})`);
   try {
     let html = execSync(`curl -s "${BASE}${page.url}"`, { encoding: 'utf8' });
 
@@ -92,12 +110,93 @@ for (const page of pages) {
     html = html.replace(/http:\/\/localhost:8881\/(["'])/g, prefix.replace(/\/$/, '') + '/$1');
     html = html.replace(/http:\/\/localhost:8881/g, '');
 
-    // Rewrite sportnzaData themeUri to relative path
-    html = html.replace(/var sportnzaData = \{[^}]*\};/g,
-      'var sportnzaData = {"themeUri":"' + prefix.replace(/\/$/, '') + '","ajaxUrl":"","nonce":""};');
+    // Rewrite sportnzaData themeUri to relative path and include lang + translations
+    html = html.replace(/var sportnzaData = \{[^}]*\};/g, function() {
+      const data = {
+        themeUri: prefix.replace(/\/$/, ''),
+        ajaxUrl: '',
+        nonce: '',
+        lang: page.lang,
+        translations: {}
+      };
+      // Load translations for non-English pages
+      if (page.lang !== 'en') {
+        try {
+          const transFile = path.join(__dirname, 'sportnza-theme', 'translations.json');
+          const allTranslations = JSON.parse(fs.readFileSync(transFile, 'utf8'));
+          const langTranslations = {};
+          for (const [key, langs] of Object.entries(allTranslations)) {
+            if (langs[page.lang]) {
+              langTranslations[key] = langs[page.lang];
+            }
+          }
+          data.translations = langTranslations;
+        } catch (e) {
+          // Translations file not found, skip
+        }
+      }
+      return 'var sportnzaData = ' + JSON.stringify(data) + ';';
+    });
+
+    // Rewrite language switcher: replace ?lang=xx query param URLs with path-based URLs
+    // The select options have value="...?lang=xx" — rewrite to path-based
+    for (const lang of languages) {
+      if (lang === 'en') {
+        // English links should point to root versions of the same page
+        const re = new RegExp('value="[^"]*[?&]lang=en[^"]*"', 'g');
+        html = html.replace(re, function() {
+          // For English, strip the lang subfolder — go to same relative page at root
+          // Current page path (without lang prefix)
+          const basePath = page.file.replace(/^[a-z]{2}\//, '');
+          const baseDir = path.dirname(basePath);
+          const targetDepth = basePath.split('/').length - 1;
+          const toRoot = depth > 0 ? '../'.repeat(depth) : './';
+          if (baseDir === '.' || baseDir === '') {
+            return 'value="' + toRoot + '"';
+          }
+          return 'value="' + toRoot + baseDir + '/"';
+        });
+      } else {
+        const re = new RegExp('value="[^"]*[?&]lang=' + lang + '[^"]*"', 'g');
+        html = html.replace(re, function() {
+          // For non-English, point to /<lang>/samepage/
+          const basePath = page.file.replace(/^[a-z]{2}\//, '');
+          const baseDir = path.dirname(basePath);
+          const toRoot = depth > 0 ? '../'.repeat(depth) : './';
+          if (baseDir === '.' || baseDir === '') {
+            return 'value="' + toRoot + lang + '/"';
+          }
+          return 'value="' + toRoot + lang + '/' + baseDir + '/"';
+        });
+      }
+    }
+
+    // For non-English pages, rewrite internal nav links to include language prefix
+    if (page.lang !== 'en') {
+      const toRoot = depth > 0 ? '../'.repeat(depth) : './';
+      // Rewrite category links
+      html = html.replace(/href="([^"]*?)category\//g, function(match, pre) {
+        // Only rewrite if it's a relative link (starts with ./ or ../)
+        if (pre.match(/^\.\.?\//)) {
+          return 'href="' + toRoot + page.lang + '/category/';
+        }
+        return match;
+      });
+      // Rewrite about link
+      html = html.replace(/href="([^"]*?)about\//g, function(match, pre) {
+        if (pre.match(/^\.\.?\//)) {
+          return 'href="' + toRoot + page.lang + '/about/';
+        }
+        return match;
+      });
+      // Rewrite home link (the one that points to ./ or ../ root)
+      html = html.replace(/href="(\.\.?\/(?:\.\.\/)*)"/g, function(match, pre) {
+        return 'href="' + toRoot + page.lang + '/"';
+      });
+    }
 
     // Rewrite internal post links (single posts aren't exported) to #
-    html = html.replace(/href="\/(?!category\/|about\/|blog\/|wp-)[a-z0-9][a-z0-9\-]*\/"/g, 'href="#"');
+    html = html.replace(/href="\/(?!category\/|about\/|blog\/|wp-|de\/|fr\/|it\/|hu\/)[a-z0-9][a-z0-9\-]*\/"/g, 'href="#"');
 
     // NOW remove any remaining localhost link/meta tags (after URL rewriting saved the ones we need)
     html = html.replace(/<link[^>]*localhost[^>]*>/g, '');

@@ -14,13 +14,21 @@ const {
 const PASSWORD = 'Whydoialwaysforget!';
 const TEMPLATE_PATH = pathModule.join(__dirname, 'node_modules', 'staticrypt', 'lib', 'password_template.html');
 
+const languages = ['de', 'fr', 'it', 'hu'];
+
+const basePages = [
+  'index.html',
+  'about/index.html',
+  'category/sports/index.html',
+  'category/academy/index.html',
+  'category/news/index.html',
+  'category/promotions/index.html',
+];
+
+// Build full page list: English at root + all language subfolders
 const pages = [
-  'docs/index.html',
-  'docs/about/index.html',
-  'docs/category/sports/index.html',
-  'docs/category/academy/index.html',
-  'docs/category/news/index.html',
-  'docs/category/promotions/index.html',
+  ...basePages.map(p => 'docs/' + p),
+  ...languages.flatMap(lang => basePages.map(p => 'docs/' + lang + '/' + p)),
 ];
 
 async function main() {

@@ -16,6 +16,7 @@ require_once SPORTNZA_DIR . '/inc/theme-setup.php';
 require_once SPORTNZA_DIR . '/inc/customizer.php';
 require_once SPORTNZA_DIR . '/inc/widgets.php';
 require_once SPORTNZA_DIR . '/inc/template-tags.php';
+require_once SPORTNZA_DIR . '/inc/i18n.php';
 
 // Content setup script (one-time use, access via ?sportnza_setup=1)
 require_once SPORTNZA_DIR . '/setup-content.php';
@@ -59,9 +60,11 @@ function sportnza_enqueue_assets() {
 
     // Pass theme data to JS
     wp_localize_script( 'sportnza-main', 'sportnzaData', array(
-        'themeUri' => SPORTNZA_URI,
-        'ajaxUrl'  => admin_url( 'admin-ajax.php' ),
-        'nonce'    => wp_create_nonce( 'sportnza_nonce' ),
+        'themeUri'     => SPORTNZA_URI,
+        'ajaxUrl'      => admin_url( 'admin-ajax.php' ),
+        'nonce'        => wp_create_nonce( 'sportnza_nonce' ),
+        'lang'         => sportnza_get_lang(),
+        'translations' => sportnza_translations_for_js(),
     ) );
 }
 add_action( 'wp_enqueue_scripts', 'sportnza_enqueue_assets' );
