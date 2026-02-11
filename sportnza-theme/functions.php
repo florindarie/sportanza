@@ -7,7 +7,7 @@
  */
 
 // Constants
-define( 'SPORTNZA_VERSION', '1.0.0' );
+define( 'SPORTNZA_VERSION', '2.1.0' );
 define( 'SPORTNZA_DIR', get_template_directory() );
 define( 'SPORTNZA_URI', get_template_directory_uri() );
 
