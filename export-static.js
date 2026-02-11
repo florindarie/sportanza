@@ -73,6 +73,9 @@ for (const page of pages) {
     html = html.replace(/<script[^>]*id='wp-[^']*'[^>]*>[\s\S]*?<\/script>/g, '');
     html = html.replace(/<script id='wp-[^']*'>[\s\S]*?<\/script>/g, '');
 
+    // Remove WP emoji module script block
+    html = html.replace(/<script type="module">\s*\/\*! This file is auto-generated \*\/[\s\S]*?<\/script>/g, '');
+
     // Calculate depth for relative paths
     const depth = page.file.split('/').length - 1;
     const prefix = depth > 0 ? '../'.repeat(depth) : './';
@@ -88,6 +91,13 @@ for (const page of pages) {
     html = html.replace(/http:\/\/localhost:8881\/about\//g, prefix + 'about/');
     html = html.replace(/http:\/\/localhost:8881\/(["'])/g, prefix.replace(/\/$/, '') + '/$1');
     html = html.replace(/http:\/\/localhost:8881/g, '');
+
+    // Rewrite sportnzaData themeUri to relative path
+    html = html.replace(/var sportnzaData = \{[^}]*\};/g,
+      'var sportnzaData = {"themeUri":"' + prefix.replace(/\/$/, '') + '","ajaxUrl":"","nonce":""};');
+
+    // Rewrite internal post links (single posts aren't exported) to #
+    html = html.replace(/href="\/(?!category\/|about\/|blog\/|wp-)[a-z0-9][a-z0-9\-]*\/"/g, 'href="#"');
 
     // NOW remove any remaining localhost link/meta tags (after URL rewriting saved the ones we need)
     html = html.replace(/<link[^>]*localhost[^>]*>/g, '');
