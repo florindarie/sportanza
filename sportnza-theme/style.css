@@ -1927,7 +1927,16 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .stories-grid {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stories-grid .article-card {
+        width: 100%;
+    }
+
+    .stories-grid .article-card .card-image {
+        width: 100%;
     }
 
     .about-layout {
@@ -1991,7 +2000,17 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .stories-grid {
+        display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .stories-grid .article-card {
+        width: 100%;
+    }
+
+    .stories-grid .article-card .card-image {
+        width: 100%;
+        height: 200px;
     }
 
     .archive-grid,
@@ -2009,7 +2028,25 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .go-beyond-section {
-        min-height: 300px;
+        min-height: auto;
+    }
+
+    .shape-section,
+    .shape-game-section {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .go-beyond-section {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .feature-cards-section {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .our-stories-section,
+    .stories-section {
+        padding: var(--spacing-3xl) 0;
     }
 
     .sidebar {
@@ -2058,6 +2095,31 @@ h1, h2, h3, h4, h5, h6 {
     .about-hero-content h1 {
         font-size: 1.75rem;
     }
+
+    .about-hero-content {
+        padding: var(--spacing-2xl) var(--spacing-lg);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-page-content,
+    .about-content-section {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .footer-content {
+        align-items: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
 }
 
 /* Mobile Portrait (480px) */
@@ -2067,11 +2129,21 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero {
-        min-height: 350px;
+        min-height: 300px;
     }
 
     .hero-title {
         font-size: 1.75rem;
+    }
+
+    .hero-content {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .hero-offer,
+    .hero-subtitle,
+    .hero-bonus {
+        font-size: 0.9375rem;
     }
 
     .section-title {
@@ -2083,9 +2155,20 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1.5rem;
     }
 
+    .btn {
+        height: 48px;
+        min-height: 48px;
+        padding: 12px 20px 14px 20px;
+        font-size: 0.8125rem;
+    }
+
     .btn-large {
         padding: 0.75rem 1.5rem;
         font-size: 0.875rem;
+    }
+
+    .feature-cards-section {
+        padding: var(--spacing-xl) 0;
     }
 
     .feature-card {
@@ -2108,6 +2191,34 @@ h1, h2, h3, h4, h5, h6 {
     .feature-card-icon {
         width: 40px;
         height: 40px;
+    }
+
+    .our-stories-section,
+    .stories-section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .shape-section,
+    .shape-game-section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .go-beyond-section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .about-page-content,
+    .about-content-section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .about-hero {
+        min-height: 300px;
+    }
+
+    .about-hero-content h1,
+    .about-hero-title {
+        font-size: 1.5rem;
     }
 
     .footer-grid {
