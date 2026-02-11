@@ -92,6 +92,7 @@ body {
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 a {
@@ -1933,10 +1934,12 @@ h1, h2, h3, h4, h5, h6 {
 
     .stories-grid .article-card {
         width: 100%;
+        min-width: 0;
     }
 
     .stories-grid .article-card .card-image {
         width: 100%;
+        min-width: 0;
     }
 
     .about-layout {
@@ -2006,10 +2009,12 @@ h1, h2, h3, h4, h5, h6 {
 
     .stories-grid .article-card {
         width: 100%;
+        min-width: 0;
     }
 
     .stories-grid .article-card .card-image {
         width: 100%;
+        min-width: 0;
         height: 200px;
     }
 
