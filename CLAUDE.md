@@ -68,4 +68,4 @@ All pages are encrypted with StatiCrypt. Password is in `encrypt-pages.js`.
 
 ## GitHub Pages
 - Serves from `docs/` folder on `main` branch
-- Repo: `florindarie/sportanza`
+- Repo: `florindarie/sportaza`
